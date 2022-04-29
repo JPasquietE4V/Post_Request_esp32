@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "C:/Users/jerem/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader",
-    "config_file":        "C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/sdkconfig",
+    "build_dir":          "C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader",
+    "config_file":        "C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",

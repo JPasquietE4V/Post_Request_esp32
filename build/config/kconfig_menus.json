@@ -2010,6 +2010,457 @@
     {
         "children": [
             {
+                "children": [],
+                "depends_on": null,
+                "help": "SSID (network name) for the Firmware.",
+                "id": "ESP_WIFI_SSID",
+                "name": "ESP_WIFI_SSID",
+                "range": null,
+                "title": "WiFi SSID",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "WiFi password (WPA or WPA2)",
+                "id": "ESP_WIFI_PASSWORD",
+                "name": "ESP_WIFI_PASSWORD",
+                "range": null,
+                "title": "WiFi Password",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "This can be an URL to the image web-service CALE.es",
+                "id": "CALE_SCREEN_URL",
+                "name": "CALE_SCREEN_URL",
+                "range": null,
+                "title": "Screen URL to the Bitmap (1, 4, 8 or 24 bits per pixel)",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Leave empty if your Screen is public in CALE.es",
+                "id": "CALE_BEARER_TOKEN",
+                "name": "CALE_BEARER_TOKEN",
+                "range": null,
+                "title": "Security token only for private Screens protected with Authentication: Bearer (Max. 65 chars)",
+                "type": "string"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "DEEPSLEEP_MINUTES_AFTER_RENDER",
+                "name": "DEEPSLEEP_MINUTES_AFTER_RENDER",
+                "range": [
+                    5,
+                    1440
+                ],
+                "title": "Minutes that the ESP32 goes to deepsleep after display rendering.",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "ESP_TRIGGER_SENSOR1",
+                "name": "ESP_TRIGGER_SENSOR1",
+                "range": [
+                    0,
+                    33
+                ],
+                "title": "RISING: Trigger a new image request when the pin goes from LOW to HIGH cale-sensor example (0 to disable)",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "DISPLAY_ROTATION",
+                "name": "DISPLAY_ROTATION",
+                "range": [
+                    0,
+                    3
+                ],
+                "title": "Display rotation: 0 = default 1 = 90\u00b0 clockwise 2 = 180\u00b0 3 = 270\u00b0",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": "Set the Maximum retry to avoid station reconnecting to the AP unlimited times.",
+                "id": "ESP_MAXIMUM_RETRY",
+                "name": "ESP_MAXIMUM_RETRY",
+                "range": null,
+                "title": "Maximum retry for trying to reconnect to WiFi",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "cale-configuration",
+        "title": "CALE Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_MOSI",
+                "name": "EINK_SPI_MOSI",
+                "range": [
+                    0,
+                    35
+                ],
+                "title": "EPD SPI: GPIO for MOSI (DIN in epaper) * Universal MOSI",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_CLK",
+                "name": "EINK_SPI_CLK",
+                "range": [
+                    0,
+                    37
+                ],
+                "title": "EPD SPI: GPIO for Clock                * Universal CLK",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_CS",
+                "name": "EINK_SPI_CS",
+                "range": [
+                    -1,
+                    34
+                ],
+                "title": "EPD SPI: GPIO for Chip Select",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_DC",
+                "name": "EINK_DC",
+                "range": [
+                    -1,
+                    34
+                ],
+                "title": "EPD: GPIO for DC",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_RST",
+                "name": "EINK_RST",
+                "range": [
+                    -1,
+                    34
+                ],
+                "title": "EPD: GPIO for Reset",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_BUSY",
+                "name": "EINK_BUSY",
+                "range": [
+                    -1,
+                    39
+                ],
+                "title": "EPD: GPIO for Busy signal - DONE for Good Display/Waveshare einks! Leave rest on 0 unless is Wave12I48 or PlasticLogic",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_CS2",
+                "name": "EINK_SPI_CS2",
+                "range": [
+                    -1,
+                    34
+                ],
+                "title": "EPD SPI: GPIO for Chip Select2",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_MISO",
+                "name": "EINK_SPI_MISO",
+                "range": [
+                    -1,
+                    36
+                ],
+                "title": "EPD SPI: GPIO for MISO",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_M1_CS",
+                "name": "EINK_SPI_M1_CS",
+                "range": [
+                    0,
+                    23
+                ],
+                "title": "* CS M1",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_S1_CS",
+                "name": "EINK_SPI_S1_CS",
+                "range": [
+                    0,
+                    23
+                ],
+                "title": "* CS S1",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_M2_CS",
+                "name": "EINK_SPI_M2_CS",
+                "range": [
+                    0,
+                    27
+                ],
+                "title": "* CS M2 do not use 16-17 when using PSRAM",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_S2_CS",
+                "name": "EINK_SPI_S2_CS",
+                "range": [
+                    0,
+                    23
+                ],
+                "title": "* CS S2",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_M1_BUSY",
+                "name": "EINK_SPI_M1_BUSY",
+                "range": [
+                    0,
+                    32
+                ],
+                "title": "* BUSY M1",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_S1_BUSY",
+                "name": "EINK_SPI_S1_BUSY",
+                "range": [
+                    0,
+                    32
+                ],
+                "title": "* BUSY S1",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_M2_BUSY",
+                "name": "EINK_SPI_M2_BUSY",
+                "range": [
+                    0,
+                    32
+                ],
+                "title": "* BUSY M2",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_SPI_S2_BUSY",
+                "name": "EINK_SPI_S2_BUSY",
+                "range": [
+                    0,
+                    32
+                ],
+                "title": "* BUSY S2",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_M1S1_DC",
+                "name": "EINK_M1S1_DC",
+                "range": [
+                    0,
+                    25
+                ],
+                "title": "* M1S1_DC: M1 & S1 share DC & RST",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_M2S2_DC",
+                "name": "EINK_M2S2_DC",
+                "range": [
+                    0,
+                    27
+                ],
+                "title": "* M2S2_DC do not use 16-17 when using PSRAM",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_M1S1_RST",
+                "name": "EINK_M1S1_RST",
+                "range": [
+                    0,
+                    33
+                ],
+                "title": "* M1S1_RST",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "EINK_M2S2_RST",
+                "name": "EINK_M2S2_RST",
+                "range": [
+                    0,
+                    33
+                ],
+                "title": "* M2S2_RST",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "display-configuration",
+        "title": "Display Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "TOUCH_SDA",
+                "name": "TOUCH_SDA",
+                "range": [
+                    0,
+                    35
+                ],
+                "title": "I2C data SDA",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "TOUCH_SDL",
+                "name": "TOUCH_SDL",
+                "range": [
+                    0,
+                    37
+                ],
+                "title": "I2C clock SDL",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "TOUCH_INT",
+                "name": "TOUCH_INT",
+                "range": [
+                    -1,
+                    34
+                ],
+                "title": "Touch interrupt: On LOW reads the data via I2C (Input pullup)",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "I2C_MASTER_FREQUENCY",
+                "name": "I2C_MASTER_FREQUENCY",
+                "range": [
+                    50000,
+                    500000
+                ],
+                "title": "I2C Frequency",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "FT6X36_DEBUG",
+                "name": "FT6X36_DEBUG",
+                "range": [
+                    0,
+                    1
+                ],
+                "title": "FT6X36 debug: On 1 will output FocalTech touch events via serial",
+                "type": "int"
+            },
+            {
+                "children": [],
+                "depends_on": null,
+                "help": null,
+                "id": "FT6X36_DEBUG_EVENTS",
+                "name": "FT6X36_DEBUG_EVENTS",
+                "range": [
+                    0,
+                    1
+                ],
+                "title": "FT6X36 debug events: On 1 will output touch events only",
+                "type": "int"
+            }
+        ],
+        "depends_on": null,
+        "id": "touch-ft6x36-configuration",
+        "title": "Touch FT6X36 Configuration",
+        "type": "menu"
+    },
+    {
+        "children": [
+            {
                 "children": [
                     {
                         "children": [],

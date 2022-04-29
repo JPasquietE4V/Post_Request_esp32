@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2
+# Install script for directory: C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/proj2")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/cale-epd")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/esp-idf/cmake_install.cmake")
+  include("C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

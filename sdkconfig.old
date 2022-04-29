@@ -129,6 +129,91 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# CALE Configuration
+#
+CONFIG_ESP_WIFI_SSID="E4V-Bordeaux"
+CONFIG_ESP_WIFI_PASSWORD="E3FE63E566D56F3E3CC7943A9A"
+CONFIG_CALE_SCREEN_URL="https://datacollectandtransformapi.azurewebsites.net//Login/authenticate"
+CONFIG_CALE_BEARER_TOKEN="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImFwaSIsIm5iZiI6MTY1MTEzMjIzMiwiZXhwIjoxNjUxMTM1ODMyLCJpYXQiOjE2NTExMzIyMzJ9.U4FjFKdcftLzSF258yEpvARIhfrBUmuWJS_PooUq_C4"
+CONFIG_DEEPSLEEP_MINUTES_AFTER_RENDER=60
+CONFIG_ESP_TRIGGER_SENSOR1=27
+CONFIG_DISPLAY_ROTATION=0
+CONFIG_ESP_MAXIMUM_RETRY=5
+# end of CALE Configuration
+
+#
+# Display Configuration
+#
+
+#
+# Fill only EPD entries for single SPI displays (Good display/Waveshare)
+#
+
+#
+# Mosi and Clock should be set for any epaper
+#
+CONFIG_EINK_SPI_MOSI=23
+CONFIG_EINK_SPI_CLK=18
+CONFIG_EINK_SPI_CS=32
+CONFIG_EINK_DC=27
+CONFIG_EINK_RST=26
+CONFIG_EINK_BUSY=35
+
+#
+# Important: Leave the rest of unconfigured GPIOs to -1 unless multi-SPI channels (wave12I48) or Plasticlogic EPDs
+#
+
+#
+# CS2 and MISO pins apply only to Plasticlogic.com epaper displays
+#
+CONFIG_EINK_SPI_CS2=4
+CONFIG_EINK_SPI_MISO=19
+
+#
+# Config below applies to 4 epaper module wave12I48 w/4 SPI CS & BUSY pins (14 pins)
+#
+
+#
+# | S2 | M2 |
+#
+
+#
+# -----------
+#
+
+#
+# | M1 | S1 |
+#
+CONFIG_EINK_SPI_M1_CS=23
+CONFIG_EINK_SPI_S1_CS=22
+CONFIG_EINK_SPI_M2_CS=16
+CONFIG_EINK_SPI_S2_CS=19
+CONFIG_EINK_SPI_M1_BUSY=32
+CONFIG_EINK_SPI_S1_BUSY=26
+CONFIG_EINK_SPI_M2_BUSY=18
+CONFIG_EINK_SPI_S2_BUSY=4
+CONFIG_EINK_M1S1_DC=25
+CONFIG_EINK_M2S2_DC=17
+CONFIG_EINK_M1S1_RST=33
+CONFIG_EINK_M2S2_RST=5
+# end of Display Configuration
+
+#
+# Touch FT6X36 Configuration
+#
+
+#
+# The touch chip needs an I2C port and one input GPIO
+#
+CONFIG_TOUCH_SDA=21
+CONFIG_TOUCH_SDL=22
+CONFIG_TOUCH_INT=17
+CONFIG_I2C_MASTER_FREQUENCY=50000
+CONFIG_FT6X36_DEBUG=0
+CONFIG_FT6X36_DEBUG_EVENTS=0
+# end of Touch FT6X36 Configuration
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y
@@ -266,7 +351,8 @@ CONFIG_ESP_TLS_USING_MBEDTLS=y
 # CONFIG_ESP_TLS_SERVER is not set
 # CONFIG_ESP_TLS_CLIENT_SESSION_TICKETS is not set
 # CONFIG_ESP_TLS_PSK_VERIFICATION is not set
-# CONFIG_ESP_TLS_INSECURE is not set
+CONFIG_ESP_TLS_INSECURE=y
+CONFIG_ESP_TLS_SKIP_SERVER_CERT_VERIFY=y
 # end of ESP-TLS
 
 #

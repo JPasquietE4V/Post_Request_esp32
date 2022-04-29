@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/CMakeFiles/bootloader
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/CMakeFiles/bootloader.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/CMakeFiles/bootloader-complete.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/CMakeFiles/bootloader
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/CMakeFiles/bootloader.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/CMakeFiles/bootloader-complete.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

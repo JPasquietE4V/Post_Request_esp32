@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/jerem/Documents/GitHub/POST_REQUEST_ESP_IDF/proj2/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/jerem/Desktop/cale-idf-master/cale-idf-master/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
